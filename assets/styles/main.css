@@ -1,0 +1,124 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+/*abaixo está uma forma de aplicar reset nas configuração do html*/
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: tem como objetivo bloquear manter a dimessão dos elementos do tanho da caixa que eles se encontram, sem estourar o tamanho.;*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+    
+}
+
+header .container{
+    /*display-flex: alinha os elementos todos em uma única linha*/
+    display: flex;
+    align-items: center;
+    /*justify-content: cria espaços, alinha de acordo com as própiedades. O space-between cria uma espaçamento entre um elemento e outro. */ 
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+/*esse bloco de código está navegando entre a tag <header> e <nav>, chegando na tag <a> e realizando a alteração.*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*---Filme---*/
+
+main{
+    
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)) ,url('../img/banner.jpg');
+
+    height: 500px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .container{
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    max-width: 70%;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+.titulo{
+    margin-top: 20%;
+    font-size: 40px;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{    
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.box-filme{
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+
+.box-filme:hover{
+    border:white solid 5px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
